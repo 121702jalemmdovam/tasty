@@ -1,0 +1,666 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+main {
+  position: relative;
+}
+
+header {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .headercontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headercontainer .logo {
+  width: 80px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+}
+header .headercontainer .logo h1 {
+  font-size: 20px;
+  color: #fff;
+}
+header .headercontainer .nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+header .headercontainer .nav a {
+  color: #cacace;
+  text-decoration: none;
+  font-size: 15px;
+}
+header .headercontainer .nav a:hover {
+  color: #fff;
+}
+header .headercontainer .collapse {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  header .headercontainer .collapse {
+    display: block;
+  }
+  header .headercontainer .collapse .dropdown-menu {
+    width: 100%;
+    height: auto;
+    left: 400px;
+  }
+  header .headercontainer .nav {
+    display: none;
+  }
+}
+#tasty {
+  width: 100%;
+  height: 630px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://preview.colorlib.com/theme/tasty/images/bg_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#tasty .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#tasty .container .tastyitem {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+#tasty .container .tastyitem h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Indie Flower", cursive;
+  font-size: 40px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 400;
+}
+#tasty .container .tastyitem button {
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+#tasty .container .tastyitem button:hover {
+  background-color: #fff;
+  color: black;
+}
+
+#delicious {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+#delicious .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#delicious .container .deliciousitem {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+#delicious .container .deliciousitem img {
+  width: 100%;
+  height: auto;
+}
+#delicious .container .deliciousitem span {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Muli", Arial, sans-serif;
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 300;
+  color: #8b8b92;
+}
+#delicious .container .deliciousitem h3 {
+  font-size: 33px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+#delicious .container .deliciousitem p {
+  width: 85%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Muli", Arial, sans-serif;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 300;
+  color: #8b8b92;
+}
+
+#js {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#js #load {
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+  border: 0;
+}
+#js #load:hover {
+  background-color: #F9F9F9;
+  color: #000;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+#js #card {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 14px;
+}
+#js #card .cardList {
+  border-radius: 10px;
+  width: 200px;
+  border: 1px solid #404044;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#js #card .cardList img {
+  border-radius: 10px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: auto;
+}
+#js #card .cardList p {
+  font-size: 30px;
+  color: #FFB400;
+  font-weight: 800;
+}
+#js #card .cardList h1 {
+  margin-bottom: 25px;
+  color: #000;
+  font-weight: 800;
+  font-size: 20px;
+}
+#js #card .cardList .jsBtn {
+  margin-bottom: 10px;
+}
+#js #card .cardList .jsBtn .cardBtn, #js #card .cardList .jsBtn .wishlistBtn {
+  padding: 4px;
+}
+#js #card .cardList .jsBtn .cardBtn {
+  background-color: transparent;
+  color: #cacace;
+  border-color: #323236;
+}
+#js #card .cardList .jsBtn .cardBtn:hover {
+  background-color: #207DFF;
+  color: #F9F9F9;
+  transition: 0.5s;
+}
+#js #card .cardList .jsBtn .wishlistBtn {
+  background-color: #207DFF;
+  color: #F9F9F9;
+  border-color: #207DFF;
+}
+#js #card .cardList .jsBtn .wishlistBtn:hover {
+  background-color: #F9F9F9;
+  color: #207DFF;
+  transition: 0.5s;
+}
+#js #load {
+  margin-top: 5%;
+}
+
+#guests {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+#guests .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#guests .container .guestsheader {
+  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#guests .container .guestsheader span {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Muli", Arial, sans-serif;
+  background: #fff;
+  font-size: 13px;
+  line-height: 1.8;
+  font-weight: 300;
+  color: #8b8b92;
+}
+#guests .container .guestsheader h1 {
+  line-height: 1.5;
+  color: #404044;
+  font-weight: 500;
+  font-size: 25px;
+}
+#guests .container .guestscard {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: auto;
+  background: #fff;
+  display: block;
+  position: relative;
+  border: 1px solid #f4f4f5;
+  text-align: center;
+  padding: 20px;
+  border-radius: 7px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+#guests .container .guestscard img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+}
+#guests .container .guestscard .icon {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#guests .container .guestscard .icon i {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #FFB400;
+  font-size: 13px;
+}
+#guests .container .guestscard p {
+  font-family: "Muli", Arial, sans-serif;
+  background: #fff;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 300;
+  color: #8b8b92;
+}
+#guests .container .guestscard .name {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#guests .container .guestscard .name h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+#guests .container .guestscard .name span {
+  font-family: "Muli", Arial, sans-serif;
+  background: #fff;
+  font-size: 13px;
+  line-height: 1.8;
+  font-weight: 300;
+  color: #8b8b92;
+}
+
+#resent {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #FAFAFA;
+}
+#resent .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#resent .container .resentheader {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#resent .container .resentheader span {
+  font-family: "Muli", Arial, sans-serif;
+  background: #fff;
+  font-size: 13px;
+  line-height: 1.8;
+  font-weight: 300;
+  color: #8b8b92;
+  font-weight: 700;
+}
+#resent .container .resentheader h1 {
+  line-height: 1.5;
+  color: #404044;
+  font-weight: 500;
+  font-size: 35px;
+}
+#resent .container .resentcard {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+#resent .container .resentcard img {
+  width: 100%;
+  height: 250px;
+}
+#resent .container .resentcard .text {
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#resent .container .resentcard .text span {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #8b8b92;
+}
+#resent .container .resentcard .text h4 {
+  font-size: 23px;
+}
+#resent .container .resentcard .textfoot {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+#resent .container .resentcard .textfoot span {
+  color: #8b8b92;
+}
+#resent .container .resentcard .textfoot i {
+  color: #8b8b92;
+}
+
+#foot {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #27272B;
+}
+#foot .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#foot .container .footitem h2 {
+  font-weight: normal;
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+#foot .container .footitem .foottext {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#foot .container .footitem .foottext p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+#foot .container .footitem .foottext .icon {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#foot .container .footitem .foottext .icon a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #323236;
+  padding: 20px;
+}
+#foot .container .footitem .foottext .icon a i {
+  color: #fff;
+  font-size: 23px;
+}
+#foot .container .footitem ul li {
+  color: rgba(255, 255, 255, 0.5);
+}
+#foot .container .footitem ul li span {
+  color: #fff;
+}
+#foot .container .footitem ul li a {
+  color: rgba(255, 255, 255, 0.5);
+}
+#foot .container .footright p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+#foot .container .footright form {
+  position: relative;
+}
+#foot .container .footright form input {
+  padding: 10px;
+  border-radius: 7px;
+  background-color: transparent;
+  border: 2px solid #8b8b92;
+}
+#foot .container .footright form i {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -30px;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #27272B;
+}
+footer .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer .container .foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .foot span {
+  color: #8b8b92;
+}
+footer .container .foot span a {
+  color: #8b8b92;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+main {
+  position: relative;
+}
+
+header {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .headercontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headercontainer .logo {
+  width: 80px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+}
+header .headercontainer .logo h1 {
+  font-size: 20px;
+  color: #fff;
+}
+header .headercontainer .nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+header .headercontainer .nav a {
+  color: #cacace;
+  text-decoration: none;
+  font-size: 15px;
+}
+header .headercontainer .nav a:hover {
+  color: #fff;
+}
+header .headercontainer .collapse {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  header .headercontainer .collapse {
+    display: block;
+  }
+  header .headercontainer .collapse .dropdown-menu {
+    width: 100%;
+    height: auto;
+    left: 400px;
+  }
+  header .headercontainer .nav {
+    display: none;
+  }
+}
+#tasty {
+  width: 100%;
+  height: 630px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://preview.colorlib.com/theme/tasty/images/bg_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#tasty .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#tasty .container .tastyitem {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+#tasty .container .tastyitem h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Indie Flower", cursive;
+  font-size: 40px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 400;
+}
+#tasty .container .tastyitem button {
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+#tasty .container .tastyitem button:hover {
+  background-color: #fff;
+  color: black;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #27272B;
+}
+footer .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer .container .foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .foot span {
+  color: #8b8b92;
+}
+footer .container .foot span a {
+  color: #8b8b92;
+}
